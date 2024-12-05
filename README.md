@@ -36,10 +36,9 @@ How I mentioned before the main problem and our backbone part is dataset, invent
 Our future work are directed for further development and deployment of the model on business process such as parking lot managing, traffic monitoring, violation detection systems. We want to implement our approach and methodology further using web application development, data engineering, and server-side architecture of model running. Nvidia DeepStream SDK implementation.
 
 
-UPD:
-# Future work
+# UPD:
+## Future work
 Apparently, utilizing and power of todays computational resources are averagely high, so there is no need in using mobilenetv2, it will only decrease accuracy and lead problems with model optimizing. We are planning to transfer the whole pipeline on Nvidia DeepStream SDK, and apply our new YOLO based architecture. Moreover, we need to apply advanced data labeling and try to apply population training on different data labeling approaches. Maybe apply Kalman filter to try decrease the noise on image. It is very essential for image processing. https://github.com/tbmoon/kalman_filter/tree/master. 
 
-UPD: 
-# Last words:
+## Last words:
 We decided to not use pruning because of mobilenetv2 architecture nature, it strongly convolutional depth wise neural network with relatively small amount of parameters. During testing the pruning results we noticed that accuracy of the whole model falls relatively drastically with losing inference power. Moreover, there is no need in optimizing, over-tuning model, because mobilenetv2 with gradient boosting - it is enough to put model on microcontroller and the whole architecture will be power efficient - with low tdp and memory consumption. Using quantization leading to same problems with inference power and accuracy loss, with small impact on power efficiency. So we decided not to use techniques for model weights, activations, and layers compression. Instead we want to introduce idea of transferring our approach to YOLO V6-7 architecture with applying catboost that fits our task - plate recognition. Moreover, we want to try more practically convenient approach - using AI/ML SDK from Nvidia. 
