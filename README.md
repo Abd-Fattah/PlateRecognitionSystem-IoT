@@ -1,3 +1,6 @@
+![Figma Presentation Preview](preview-image-url.png)
+[View the Figma Presentation](https://www.figma.com/slides/isMGHzAQKJRi6pEmfdWJ7k/IoT-Presentation?node-id=72-41&t=1agCovRzLNVKUNdG-1)
+
 # PlateRecognitionSystem-IoT
 Related Work: Overview of existing solutions, strengths, and limitations.Proposed Solution: High-level description of your approach or methodology.
 Technical Architecture: AI model/algorithm pipeline and workflow.
