@@ -48,8 +48,7 @@ We decided to not use pruning because of mobilenetv2 architecture nature, it str
 
 ## Some illustrations of the kalman filter work
 
-![simple kalman filter](simple_kalman_filter.png)
-![simple kalman filter 2](simple_kalman_filter2.png)
+![simple kalman filter](simple_kalman_filter2.png)
 ![simple kalman filter object tracking](object_tracking_kf.png)
 
 ## Clear-Air project details (the project that gave us a lot of basis in implementation and influence on work pipeline)
