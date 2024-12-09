@@ -46,6 +46,12 @@ Apparently, utilizing and power of todays computational resources are averagely 
 ## Last words:
 We decided to not use pruning because of mobilenetv2 architecture nature, it strongly convolutional depth wise neural network with relatively small amount of parameters. During testing the pruning results we noticed that accuracy of the whole model falls relatively drastically with losing inference power. Moreover, there is no need in optimizing, over-tuning model, because mobilenetv2 with gradient boosting - it is enough to put model on microcontroller and the whole architecture will be power efficient - with low tdp and memory consumption. Using quantization leading to same problems with inference power and accuracy loss, with small impact on power efficiency. So we decided not to use techniques for model weights, activations, and layers compression. Instead we want to introduce idea of transferring our approach to YOLO V6-7 architecture with applying catboost that fits our task - plate recognition. Moreover, we want to try more practically convenient approach - using AI/ML SDK from Nvidia. 
 
+## Some illustrations of the kalman filter work
+
+![simple kalman filter](simple_kalman_filter.png)
+![simple kalman filter 2](simple_kalman_filter2.png)
+![simple kalman filter object tracking](object_tracking_kf.png)
+
 ## Clear-Air project details (the project that gave us a lot of basis in implementation and influence on work pipeline)
 
 Link to article about the project: https://esquire.kz/sergeki-budut-sledit-za-chistotoj-vozduha-v-almaty/
